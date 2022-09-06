@@ -16,6 +16,7 @@ inputs:
         NODE_ENV: test
   apigatewayConf: #  api网关配置
     enableCORS: true #  允许跨域
+    isBase64Encoded: true # 上传文件
     protocols:
       - http
       - https
