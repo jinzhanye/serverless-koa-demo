@@ -2,16 +2,17 @@
   "name": "koa-demo",
   "version": "1.0.0",
   "description": "",
-  "main": "sls.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node ./app.js",
+    "depoly": "sls deploy"
   },
   "author": "yugasun",
   "license": "MIT",
   "dependencies": {
     "@koa/multer": "^3.0.0",
+    "@koa/router": "^12.0.0",
     "koa": "^2.11.0",
-    "koa-router": "^8.0.8",
     "koa-sendfile": "^2.0.1",
     "multer": "^1.4.2"
   }
