@@ -1,7 +1,7 @@
 component: koa
-name: koaDemo
-app: koaDemoApp
-stage: test
+name: koaDemoFn
+app: koa-demo-e8c46452
+stage: release
 
 inputs:
   runtime: Nodejs12.16
@@ -14,7 +14,7 @@ inputs:
   functionConf:
     environment: #  环境变量
       variables: #  环境变量数组
-        NODE_ENV: test
+        NODE_ENV: release
   apigatewayConf: #  api网关配置
     enableCORS: true #  允许跨域
     isBase64Encoded: true # 上传文件
