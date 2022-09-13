@@ -19,6 +19,16 @@ router.get(`/`, async (ctx) => {
   await sendFile(ctx, path.join(__dirname, 'index.html'))
 })
 
+router.get(`/layer`, async (ctx) => {
+  const folder = isServerless ? '/opt/layer-files' : path.resolve(__dirname, './layer-files')
+  const data = fs.readFileSync(folder + '/d.txt', { encoding:'utf8' });
+
+  ctx.body = {
+    success: true,
+    data
+  };
+})
+
 router.post('/upload', upload.single('file'), (ctx) => {
   ctx.body = {
     success: true,

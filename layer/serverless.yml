@@ -1,0 +1,12 @@
+component: layer
+app: koaDemoApp
+name: MyTestLayer
+stage: test
+
+inputs:
+  name: MyTestLayer
+  region: ap-guangzhou
+  src: ../layer-files
+  runtimes:
+    - Nodejs14.18
+
