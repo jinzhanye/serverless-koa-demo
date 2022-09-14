@@ -22,3 +22,6 @@ inputs:
     protocols:
       - http
       - https
+  layers:
+    - name: ${output:${stage}:${app}:MyTestLayer.name} #  layer名称
+      version: ${output:${stage}:${app}:MyTestLayer.version} #  版本

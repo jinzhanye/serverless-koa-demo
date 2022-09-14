@@ -8,5 +8,5 @@ inputs:
   region: ap-guangzhou
   src: ../layer-files
   runtimes:
-    - Nodejs14.18
+    - Nodejs12.16
 

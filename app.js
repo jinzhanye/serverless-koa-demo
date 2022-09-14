@@ -20,7 +20,7 @@ router.get(`/`, async (ctx) => {
 })
 
 router.get(`/layer`, async (ctx) => {
-  const folder = isServerless ? '/opt/layer-files' : path.resolve(__dirname, './layer-files')
+  const folder = isServerless ? '/opt' : path.resolve(__dirname, './layer-files')
   const data = fs.readFileSync(folder + '/d.txt', { encoding:'utf8' });
 
   ctx.body = {
